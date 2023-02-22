@@ -376,11 +376,17 @@ body {
   .contact {
     height: auto;
   }
-
+  .formback{
+    padding: 0!important;
+  }
+  .input{
+    margin-top: 10px;
+  }
   .centering {
     display: block;
     margin: auto;
   }
+ 
 }
 .addressElement {
   background: rgba(40, 40, 41, 0.6);
@@ -431,13 +437,24 @@ body {
 }
 
 .consubmit {
-  width: 60%;
+  width: 50%;
   display: block;
   margin: auto;
   padding: 15px 20px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 760px) {
+   .consubmit{
+    width: 70%;
+    margin-bottom: 17vh;
+    border:none;
+  }
+   .contacthead{
+    margin-bottom: 18vh;
+  }
 }
 .addresicon {
   font-size: 2.5rem;
