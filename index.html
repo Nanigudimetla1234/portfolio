@@ -384,53 +384,55 @@
     <!-- skills section End  -->
 
     <!-- navbar end -->
-    <script src="index.js"></script>
+   
+</body>
+<script src="index.js"></script>
 
-    <script>
-        let bigScreen = document.getElementById("bigScreen");
-        let smallScreen = document.getElementById("smallScreen");
+<script>
+    let bigScreen = document.getElementById("bigScreen");
+    let smallScreen = document.getElementById("smallScreen");
 
+    checkSize();
+    window.addEventListener("resize", () => {
         checkSize();
-        window.addEventListener("resize", () => {
-            checkSize();
-        });
-        function checkSize() {
-            let width = document.body.clientWidth;
-            console.log(width);
-            if (width < 760) {
-                bigScreen.style.display = "none";
+    });
+    function checkSize() {
+        let width = document.body.clientWidth;
+        console.log(width);
+        if (width < 760) {
+            bigScreen.style.display = "none";
+            smallScreen.style.display = "none";
+        }
+        else {
+            bigScreen.style.display = "flex";
+            smallScreen.style.display = "none";
+        }
+    }
+
+
+    let enable = 0;
+    let toggler = document.getElementById("toggler");
+    toggler.addEventListener("click", () => {
+
+        if (enable === 0) {
+            enable = 1;
+            smallScreen.style.display = "inline";
+            smallScreen.style.left = "0vw";
+            smallScreen.style.width = "100vw";
+
+        }
+        else {
+            enable = 0;
+            smallScreen.style.left = "100vw";
+            smallScreen.style.width = "0vw";
+
+            setTimeout(() => {
                 smallScreen.style.display = "none";
-            }
-            else {
-                bigScreen.style.display = "flex";
-                smallScreen.style.display = "none";
-            }
+            }, 600)
+
         }
 
-
-        let enable = 0;
-        let toggler = document.getElementById("toggler");
-        toggler.addEventListener("click", () => {
-
-            if (enable === 0) {
-                enable = 1;
-                smallScreen.style.display = "inline";
-                smallScreen.style.left = "0vw";
-                smallScreen.style.width = "100vw";
-
-            }
-            else {
-                enable = 0;
-                smallScreen.style.left = "100vw";
-                smallScreen.style.width = "0vw";
-
-                setTimeout(() => {
-                    smallScreen.style.display = "none";
-                }, 600)
-
-            }
-
-        })
+    })
 
 
         //   let enable = 0;
@@ -459,7 +461,6 @@
 
         //     })
 
-    </script>
-</body>
+</script>
 
 </html>
