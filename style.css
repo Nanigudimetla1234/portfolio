@@ -373,7 +373,7 @@ body {
 
 /* contact section start*/
 .contact {
-  height: 82vh;
+  height: 80vh;
 }
 @media only screen and (max-width: 760px) {
   .contact {
@@ -452,11 +452,14 @@ body {
 @media only screen and (max-width: 760px) {
    .consubmit{
     width: 70%;
-    margin-bottom: 17vh;
+    margin-bottom: 13vh;
     border:none;
   }
    .contacthead{
-    margin-bottom: 18vh;
+        margin-bottom: 14vh;
+  }
+  .input{
+    width: 100%;
   }
 }
 .addresicon {
@@ -479,6 +482,14 @@ textarea {
   margin: auto;
 }
 
+.hr5{
+   color: black;
+  padding: 1px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 20vh !important;
+}
 /* contact section end  */
 
 /* footer section start  */
@@ -487,6 +498,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .footericons {
   display: flex;
@@ -496,5 +508,12 @@ textarea {
   font-size: 2rem;
   margin: 15px;
 }
-
+@media only screen and (max-width: 760px) {
+  .footer{
+    margin-bottom: 1vh !important;
+  }
+  .hr5{
+    margin-top:2vh !important ;
+  }
+}
 /* footer section  end  */
