@@ -227,7 +227,7 @@ body {
     margin-bottom: 3vh;
   }
   .profileImage {
-    top:-9rem;
+    top: -9rem;
     height: 28rem;
   }
   /* .image {
@@ -371,6 +371,217 @@ body {
 
 /* project section end  */
 
+
+/* education start  */
+
+.educationElement{
+  height: 12rem !important;
+  border-left: 5px dotted #f40239ff;
+  border-bottom: 5px dotted #f40239ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+}
+.quote{
+  position: absolute;
+}
+.inter{
+  
+  top: -3vh;
+  right: -10%;
+}
+.btechQ{
+   top: -1vh;
+  right: -35%;
+}
+.tenthQ{
+  top: 0vh;
+  right: -28%;
+  width: 70%;
+}
+.message-blue {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f40239ff;
+    width: 250px;
+    height: auto;
+    text-align: left;
+    font: 400 .9em 'Open Sans', sans-serif;
+    border: 1px solid #f40239ff;
+    border-radius: 10px;
+}
+.quote{
+  display: none;
+}
+.ele1:hover .btechQ{
+display: block !important;
+}
+.ele2:hover .inter{
+  display: block !important;
+}
+.ele3:hover .tenthQ{
+  display: block !important;
+}
+@media (min-wdth:990px) {
+  .tenthQ{
+    top: -6vh;
+    left: 10vw;
+    width: 50%;
+  }
+  .btechQ,.inter{
+    top: -1vh;
+  right: -15vw;
+  }
+}
+
+
+.message-content {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.message-blue:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #f40239ff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 0;
+    left: -15px;
+}
+
+.message-blue:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid #f40239ff;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    bottom: -1px;
+    left: -17px;
+}
+
+.education{
+  position: relative;
+  padding: 10px 30px 10px 30px;
+}
+
+.fa-user-graduate{
+  position: absolute;
+  top:10px;
+  border : 3px solid #f40239ff;
+  border-radius: 50%;
+  font-size: 3rem;
+  /* height:100%; */
+  padding: 15px;
+  left: -2rem;
+  top:-5rem;
+}
+.fa-backpack{
+  border : 3px solid #f40239ff;
+  border-radius: 50%;
+  font-size: 3rem;
+  /* height:100%; */
+  padding: 15px;
+  position: absolute;
+  right:-6rem;
+  top:8rem;
+}
+.fa-cycle{
+position: absolute;
+  right:4rem;
+  top:8rem;
+  transform: rotateY(180deg);
+}
+@keyframes cycle {
+  0% {right: 4rem;}
+  50% {right: 8rem;}
+  100% {right: 4rem;}
+}
+.fa-read{
+position: absolute;
+  right:4rem;
+  top:8rem;
+  transform: rotateY(180deg);
+}
+.fa-developer{
+position: absolute;
+  right:4rem;
+  top:8rem;
+  transform: rotateY(180deg);
+  width: 3.5rem;
+}
+.fa-mug-hot{
+  position: absolute;
+  /* right:12rem; */
+  color:brown;
+  display: none;
+  bottom:1rem;
+  width: 3.5rem;
+}
+@keyframes coffee {
+  from {
+    right: 12rem;
+  } to {  
+    right: 5rem;
+  }
+}
+
+.fa-book{
+   position: absolute;
+   display: none;
+   bottom:1rem;
+   width: 1.4rem;
+  /* right:12rem; */
+}
+@keyframes book {
+  from {
+    right: 12rem;
+  } to {  
+    right: 7.2rem;
+  }
+}
+.educationElement{
+  position: relative;
+}
+.education h4:hover{
+  color: #f40239ff;
+}
+.education h5:hover{
+  color: #f40239ff;
+}
+
+@media only screen and (max-width: 760px) {
+  .mobileeducationElement{
+    padding: 5px;
+    border-top: 2px solid #f40239ff;
+    text-align: center;
+  }
+  .educationElement{
+    align-items: center;
+  }
+  .logonone{
+    display: none;
+  }
+  .fa-developer,.fa-cycle{
+    right: 1rem;
+  }
+}
+
+/* education end  */
+
+
+
+
 /* contact section start*/
 .contact {
   height: 80vh;
@@ -379,17 +590,16 @@ body {
   .contact {
     height: auto;
   }
-  .formback{
-    padding: 0!important;
+  .formback {
+    padding: 0 !important;
   }
-  .input{
+  .input {
     margin-top: 10px;
   }
   .centering {
     display: block;
     margin: auto;
   }
- 
 }
 .addressElement {
   background: rgba(40, 40, 41, 0.6);
@@ -450,15 +660,15 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-   .consubmit{
+  .consubmit {
     width: 70%;
     margin-bottom: 13vh;
-    border:none;
+    border: none;
   }
-   .contacthead{
-        margin-bottom: 14vh;
+  .contacthead {
+    margin-bottom: 14vh;
   }
-  .input{
+  .input {
     width: 100%;
   }
 }
@@ -482,8 +692,8 @@ textarea {
   margin: auto;
 }
 
-.hr5{
-   color: black;
+.hr5 {
+  color: black;
   padding: 1px;
   width: 100%;
   display: block;
@@ -498,7 +708,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .footericons {
   display: flex;
@@ -509,11 +718,11 @@ textarea {
   margin: 15px;
 }
 @media only screen and (max-width: 760px) {
-  .footer{
+  .footer {
     margin-bottom: 1vh !important;
   }
-  .hr5{
-    margin-top:2vh !important ;
+  .hr5 {
+    margin-top: 2vh !important ;
   }
 }
 /* footer section  end  */
